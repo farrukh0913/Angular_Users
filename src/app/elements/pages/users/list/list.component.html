@@ -1,0 +1,62 @@
+<div class="list-main-container">
+  <div class="heading">
+    <h4>{{ "manageuser" | translate }}</h4>
+  </div>
+  <div class="add-user">
+    <div class="add-user-bt">
+      <i class="fa-solid fa-plus"></i>
+      <span>Add a user</span>
+    </div>
+  </div>
+  <div class="table-container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">{{ "id" | translate }}</th>
+          <th scope="col">Avatar</th>
+          <th scope="col">{{ "firstname" | translate }}</th>
+          <th scope="col">{{ "lastname" | translate }}</th>
+          <th scope="col">{{ "emailAddress" | translate }}</th>
+          <th scope="col">--</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <th scope="row">{{ user.id }}</th>
+          <td>
+            <img
+              src="{{ user.avatar }}"
+              class="me-2"
+              style="width: 30px; border-radius: 50%"
+            />
+          </td>
+          <td>{{ user.first_name }}</td>
+          <td>{{ user.last_name }}</td>
+          <td>
+            <a href="#">{{ user.email }}</a>
+          </td>
+          <td> <button mat-button [matMenuTriggerFor]="menu">
+            Actions <span class="arrow">&#9662;</span>
+        </button>
+        <mat-menu class="mat-menuu" #menu="matMenu">
+            <button mat-menu-item (click)="editUser(user)"><i class="fa-regular fa-pen-to-square"></i>
+                Update</button>
+            <button mat-menu-item (click)="deleteUser(user)"><i class="fa-solid fa-trash"></i>
+                Delete</button>
+        </mat-menu>
+    </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center p-2">
+      <ngb-pagination
+        [collectionSize]="collectionSize"
+        [(page)]="page"
+        [pageSize]="pageSize"
+        (pageChange)="refreshPagination()"
+      >
+      </ngb-pagination>
+    </div>
+  </div>
+</div>

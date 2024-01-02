@@ -1,0 +1,18 @@
+{
+    
+    "english": "Anglais",
+    "french": "Français",
+    "home":"Maison",
+    "manageuser":"Gérer les utilisateurs",
+    "welcometothetestapplication":"Bienvenue sur cette application de test",
+    "addauser":"Ajouter un utilisateur",
+    "update":"Mise à jour",
+    "delete":"Supprimer",
+    "id":"IDENTIFIANT",
+    "firstname":"Prénom",
+    "lastname":"Nom de famille",
+    "emailAddress":"Adresse e-mail"
+
+
+
+}

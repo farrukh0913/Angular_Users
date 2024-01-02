@@ -1,0 +1,15 @@
+{
+    
+    "english": "English",
+    "french": "French",
+    "home":"Home",
+    "manageuser" : " Manage users",
+    "welcometothetestapplication":"Welcome to this test application",
+    "addauser":"Add a user",
+    "update":"Update",
+    "delete":"Delete",
+    "id":"ID",
+    "firstname":"First name",
+    "lastname":"Last name",
+    "emailAddress":"Email address"
+}

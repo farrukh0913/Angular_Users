@@ -1,0 +1,40 @@
+<div class="top-bar-container">
+  <div class="logo-container">
+    <h5>Angular training</h5>
+    <p>Presented by: Prof. Oussama BOUSIFI</p>
+  </div>
+  <div class="language-change-container">
+    <div class="menu-container">
+      <div class="menu-header" (click)="toggleMenu()">
+        <img [src]="selectedImags" />
+        <span class="arrow" [class.open]="menuOpen">&#9662;</span>
+      </div>
+      <div class="menu-list" *ngIf="menuOpen">
+        <div
+          (click)="
+            onItemClick(
+              'en',
+              'https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119_640.png'
+            )
+          "
+        >
+          <img
+            src="https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119_640.png"
+          /><span> EN</span>
+        </div>
+        <div
+          (click)="
+            onItemClick(
+              'fr',
+              'https://static4.depositphotos.com/1009841/285/i/450/depositphotos_2858036-stock-photo-flag-of-france.jpg'
+            )
+          "
+        >
+          <img
+            src="https://static4.depositphotos.com/1009841/285/i/450/depositphotos_2858036-stock-photo-flag-of-france.jpg"
+          /><span>FR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
