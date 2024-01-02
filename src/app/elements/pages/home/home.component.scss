@@ -3,3 +3,35 @@
     padding: 20px;
     overflow: auto;
 }
+
+.buble-chart-container {
+    width: 73%;
+    height: 500px;
+    // background-color: bisque;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 5px;
+}
+
+.dognut-chart-container {
+    width: 25%;
+    height: 500px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 5px;
+}
+
+.row1 {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.line-chart-contaner {
+    width: 95%;
+    height: 600px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

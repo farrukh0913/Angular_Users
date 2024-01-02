@@ -50,10 +50,15 @@
   height: 500px;
   margin-top: 20px;
 }
+
 ::ng-deep .mat-mdc-menu-item {
-    min-height: 34px !important
+  min-height: 34px !important
 }
 
 ::ng-deep .mat-mdc-menu-content {
-    width: 151px !important;
+  width: 151px !important;
+}
+
+::ng-deep .pagination {
+  --bs-pagination-focus-box-shadow: 0;
 }
